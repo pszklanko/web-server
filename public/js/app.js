@@ -1,4 +1,4 @@
-const fetchWeather = (address) => fetch(`http://localhost:3000/weather?address=${address}`).then((res) => {
+const fetchWeather = (address) => fetch(`/weather?address=${address}`).then((res) => {
     res.json().then((data) => {
         if (data.error) {
             messageOne.textContent = '';
